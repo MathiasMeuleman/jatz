@@ -1,0 +1,85 @@
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+	rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<style>
+body {
+
+	font-size: 10px;
+	font-family: 'Montserrat';
+	width: 2432px;
+
+}
+
+.parent {
+
+display: grid;
+grid-template-columns: repeat(32, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+} 
+.top-row {
+	border-top: 1px solid black;
+} 
+.parent > .block {
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows: 20% auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+	width: 70px;
+	height: 124px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+.name {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.number {
+	font-style: thin;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.weekend {
+	background-color: #eeeeee;
+}
+.month {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	margin-left: 2px;
+	font-size: 28px;
+	font-weight: bold;
+}
+.header {
+	border-bottom: 4px solid black;
+	padding-right: 50px;
+	direction: rtl;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+</style>
+
+<body>
+
+<div>
+year
+</div>
+
+<div class="parent">
+template
+</div>
+</body>
+
+</html>		
