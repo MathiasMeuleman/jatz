@@ -51,7 +51,7 @@ def generate_calendar(year):
     f = open('./index_template.html', 'r')
     lines = f.readlines()
     f.close()
-    f = open('./index.html', 'w')
+    f = open(sys.argv[1] + '.html', 'w')
     for line in lines:
         if line == "year\n":
             line = header_string
